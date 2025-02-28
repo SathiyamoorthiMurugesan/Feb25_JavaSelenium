@@ -762,3 +762,72 @@ method2() {
 print (ClassA.a);
 //print (TalukOffice.receptionist)
 }
+
+**************************************************************************
+
+*********Calling methods **********
+
+A work - method1(); -- 100 lines of codes
+
+B work - method2(); -- 100 lines of codes
+
+C work - method3(); -- 250 lines of code 
+	method3() is method1() + method2() + some other work
+
+- Reuse of methods 
+- duplicates and redundant codes - remove
+
+AS OF NOW, WE HAVE SEEN TWO KIND OF METHODS
+1. static methods 
+2. non-static methods
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+//	We can create object of a class in another class 
+//		* (eg: creating object for Class22 inside of CallingMethods1)
+	
+//	For reference: 
+//		* Which method you are going to call is matters
+//		* Which class you are going to call also matters
+//		* static methods/variables always belongs to the class
+	
+//&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+	
+//	With in A class
+//		* Calling a static method from non-static method 
+//				- Direct
+//		* Calling a static method from static method 
+//				- Direct
+//		* Calling a non-static method from non-static method 
+//				- Direct/ Object Creation
+//		* Calling a non-static method from static method 
+//				- Object Creation
+	
+//	withInAClass(from)		static			non-static
+//	non-static              DIRECT          DIRECT/OBJECT CREATION
+//	static 				    DIRECT          OBJECT CREATION
+	
+//&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+	
+//	Outside a class
+//	* Calling a static method of another class from non-static method 
+//			- ClassName + static method name
+//	* Calling a static method of another class from static method 
+//			- ClassName + static method name
+//	* Calling a non-static method of another class from non-static method 
+//			- Object Creation
+//	* Calling a non-static method of another class from static method 
+//			- Object Creation
+	
+//	OutsideOfClass		static			   non-static
+//	non-static          CLASSNAME          OBJECT CREATION
+//	static 				CLASSNAME          OBJECT CREATION
+	
+//&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+	
+//	CONCLUSTION
+//	When you are going to call a 
+//		* Non-static - Object Creation
+//		* static - direct(within a class) or along with class name (outside of class)
+
