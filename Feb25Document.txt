@@ -831,3 +831,106 @@ AS OF NOW, WE HAVE SEEN TWO KIND OF METHODS
 //		* Non-static - Object Creation
 //		* static - direct(within a class) or along with class name (outside of class)
 
+
+
+************************************************************************
+
+Access Modifier
+	* It defines where and who can use a method/variable/class
+	1) default
+	2) private
+	3) protected
+	4) public 
+	
+	Syntax = accessModifier dataType variableName/variable = variableValue (Could be local variable or non-static variable)
+		   = static accessModifier dataType variableName/variable = variableValue (class level variable or static variable)
+		   
+	int a = 10; - default (no need to mention "default" word
+	private int a = 10;
+	protected int a = 10;
+	public int a = 10;
+	
+	
+	package1
+		classA ( int a = 10)
+			ClassB (same package of ClassA and sub class of ClassA)
+		classC (same package but non sub of ClassA)
+	package2
+		classE (diff package and non sub class of ClassA)
+		classD (diff package and sub class of ClassA)
+		
+	
+How ClassA and other Classes can use variable 'a' based on its access modifier.
+
+classA                                 				| default (int a = 10)  |  private (int b = 20) | protected (int c = 30) | public (int d = 40)
+													 
+classA 				                				| yes     				| yes       			| yes        			 | yes
+									 				        
+same package but sub class (classB)	 			 	| yes     				| no        			| yes        			 | yes 
+									 				
+same package but NON sub class (classC) 			| yes     				| no        			| yes        			 | yes
+									 				
+different package but sub class (classD)			| no      				| no        			| no         			 | yes
+									 				
+different package but NON sub class (classE)		| no      				| no        			| no         			 | yes
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+JVM, JRE, JDK
+
+our codes - English - .java
+compile - .class - byte code (machine recognizable language). 
+			it is available in target folder.
+
+
+JVM - Java Virtual Machine 
+* This can not be seen
+* it starts the execution(creates Runtime Environment)
+* It first checks for main method and executes the codes inside the main method
+* It creates the code flow, in java the flow is called "Thread"  - "main Thread"
+* JVM provides run time environment in which Java byte codes can be executed
+* loads code| verifies code| execute code| provides run time environment
+
+JRE - Java Runtime Environment
+* Physically exist
+* Contains JVM and set of libraries
+* JVM uses these libraries to execute the codes
+
+JDK - Java Developement kit
+* It contains JVM, set of libraries and dev tools (JRE + dev tools)
+* Used to develop and execute the codes
+* Dev tools + debugger + compiler + java doc
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Java keywords
+new, class, interface, abstract, all the access modifiers, data types, static, this, super, throw, throws, try, 
+catch, final, finally, data type, if, for, while, break, continue, switch, case;
+
+* dont create variables and method names using java predefined keywords 
+* Java is case sensitive language (Sathya, sathya)
+* java is a OOPs(Object Oriented Program) language
+	* Java is not a 100% OOPs language
+
+Naming conversion in java
+* Should not use above things
+* homepage - homePage (Camel case)
+
+If you are creating package, method name
+* should start with small letter followed by camel case
+
+if you are creating class or interface or Object
+* should start with Captial letter followed by camel case
+
+thisIsPackageName 
+ThisIsClassName
+ThisIsInterfaceName
+
+thisIsMethodName
+thisIsObjectName or ThisIsObjectName
+thisIsVariableName
+
+package, method, object, variable - starts with small letter
+Class, Interface, Object - starts with Capital letter
+
+
