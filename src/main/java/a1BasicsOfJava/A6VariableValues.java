@@ -1,16 +1,13 @@
 package a1BasicsOfJava;
 
 public class A6VariableValues {
-
+	
 	static int b; // declare
-
+	
 	static int c = 20; // declare + initialize;
 
-	static int x = 100;
-	
-
 	public static void main(String[] args) {
-		A6 obj = new A6();
+		A6VariableValues obj = new A6VariableValues();
 		obj.method1();
 		obj.method2();
 
@@ -65,7 +62,11 @@ public class A6VariableValues {
 		System.out.println(c);
 //		if we run method1 and  then method2. then the value of c is 23
 //		if we run only method2, then the value of c is 20
-
+		
+			
+		
 	}
+	
+	
 
 }

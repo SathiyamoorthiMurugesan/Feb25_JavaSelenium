@@ -834,6 +834,7 @@ AS OF NOW, WE HAVE SEEN TWO KIND OF METHODS
 
 
 ************************************************************************
+Day  - 03/03/2025
 
 Access Modifier
 	* It defines where and who can use a method/variable/class
@@ -933,4 +934,6 @@ thisIsVariableName
 package, method, object, variable - starts with small letter
 Class, Interface, Object - starts with Capital letter
 
+************************************************************************************
 
+Day  - 04/03/2025
