@@ -936,4 +936,10 @@ Class, Interface, Object - starts with Capital letter
 
 ************************************************************************************
 
-Day  - 04/03/2025
+Day 13 - 04/03/2025
+
+parameterized methods using int, String 
+
+how to bring a local variable value outside of the method
+
+*************************************************************************************
