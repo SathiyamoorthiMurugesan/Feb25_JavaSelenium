@@ -957,6 +957,26 @@ Day 16 - 07/03/2025
 
 Memory management in Java
 
+Return type in Java
+
+**************************************************************************************
+
+Day 17 - 08/03/2025
+
+Return type in Java - class 2
+
+
+**************************************************************************************
+
+Day 18 - 10/03/2025
+
+Return type in Java - class 3
+
+and multiple parameters and multiple return types
+
+
+
+
 
 
 
