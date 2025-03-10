@@ -28,6 +28,13 @@ public class A7VariableAsParameter {
 
 		obj.writeTheAlphabet('A');
 		obj.whatHeSaid(false);
+		
+//		**********************************************************
+		System.out.println("Multiple parameters");
+		obj.buySoap("Hamam", 10);
+		obj.buySoap("Dove", 100);
+		
+		obj.buySoap(100, "Hamam");
 
 	}
 
@@ -132,5 +139,28 @@ public class A7VariableAsParameter {
 //	Similarly going to a page from your profile in any web page you logged.
 //	Go to any menu from a page
 //	For these, if we use parameterized methods, we can achieve reuse of code and avoid redundant codes
+	
+	
+	public void buySoap(String soapName, int soapAmount) {
+		
+		System.out.println("Bought "+soapName+ " soap for rupees "+soapAmount);		
+	}
+	
+//	public void buySoap(String abc, int aa) {
+//		
+//		System.out.println("Doing some other work");	
+//	}
+	
+	public void buySoap(int soapAmount, String soapName) {
+		
+		System.out.println("Bought "+soapName+ " soap for rupees "+soapAmount);		
+	}
+	
+	public void buySoap(int soapAmount1, int soapAmount2) {
+		
+		System.out.println("Bought for rupees "+soapAmount1);	
+		System.out.println("Bought for rupees "+soapAmount2);
+	}
+
 
 }

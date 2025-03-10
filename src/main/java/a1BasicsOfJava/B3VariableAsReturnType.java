@@ -29,10 +29,13 @@ package a1BasicsOfJava;
  * 		* refer methodA() and methodAA() running time.
  * 
  * * By using the return type, we can bring out the local variable value outside of the method
- * 		* 
+ * 		* Create a method with int (for example) return type and inside the method create local variable 
+ * 		* Create a class level variable
+ * 		* Call the method in main method, and assign the return value of the method to the class level variable
+ * 		* Now, you can use the class level variable as it has the value of the local variable
  * 
  * 
- * * Instead of variables or parameters, we can use the method with parameter
+ * * Instead of variables or parameters, we can use the method with return type
  */
 
 public class B3VariableAsReturnType {
@@ -82,6 +85,14 @@ public class B3VariableAsReturnType {
 		System.out.println(obj.classVariableToStoreTheLocalVariableValue2);
 		obj.methodWithLocalVariable1(30);
 		System.out.println(obj.classVariableToStoreTheLocalVariableValue2);
+		
+//		*****************************************************************************
+		
+		obj.methodA2(10);
+		
+		obj.methodA2(obj.methodA1()); //obj.methodA2(100)
+		
+		int a = obj.methodA1(); //int a = 100;
 		
 
 	}
@@ -196,5 +207,33 @@ public class B3VariableAsReturnType {
 		System.out.println(classVariableToStoreTheLocalVariableValueNew);
 		System.out.println(classVariableToStoreTheLocalVariableValue2);
 	}
+	
+//	**********************************************************************************
+	public int methodA1() {
+		return 100;
+	}
+	
+	public void methodA2(int abc) {
+		System.out.println(abc);
+	}
+	
+	public int methodA3() {
+		
+		return methodA1();  //return 100;
+	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

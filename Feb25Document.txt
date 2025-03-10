@@ -974,6 +974,16 @@ Return type in Java - class 3
 
 and multiple parameters and multiple return types
 
+**************************************************************************************
+
+Day 19 - 11/03/2025
+
+Class or interface as a parameter 
+
+HomeWork
+
+How to read a property file using Java
+
 
 
 
