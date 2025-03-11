@@ -1,14 +1,14 @@
 package a1BasicsOfJava;
 
-public class B4ClassAsReturnType {
+public class B4ClassOrInterfaceAsReturnType {
 	
 //	Same like class, you can also return an interface as a return type of a method.
 	
 	ABC abc; //Variable created for class. (like - int a)
-	B4ClassAsReturnType b4;
+	B4ClassOrInterfaceAsReturnType b4;
 
 	public static void main(String[] args) {
-		B4ClassAsReturnType obj = new B4ClassAsReturnType();
+		B4ClassOrInterfaceAsReturnType obj = new B4ClassOrInterfaceAsReturnType();
 		int aa = obj.methodAA();
 		
 		ABC myName = obj.methodB();  //ABC myName = new ABC();
@@ -54,7 +54,7 @@ public class B4ClassAsReturnType {
 		return abc;
 	}
 	
-	public B4ClassAsReturnType methodC() {
+	public B4ClassOrInterfaceAsReturnType methodC() {
 		System.out.println("I am method from B4ClassAsReturnType class and return same class");
 		return b4;
 	}

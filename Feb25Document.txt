@@ -982,7 +982,17 @@ Class or interface as a parameter
 
 HomeWork
 
-How to read a property file using Java
+How to read a property file or any file using Java
+
+**************************************************************************************
+
+Day 20 - 12/03/2025
+
+Final variable in Java
+
+Constructor basics
+
+
 
 
 
