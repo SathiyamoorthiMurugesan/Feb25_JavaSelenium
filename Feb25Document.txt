@@ -988,6 +988,48 @@ How to read a property file or any file using Java
 
 Day 20 - 12/03/2025
 
+How to read a property file or any file using Java - explanation the concept in the each line 
+
+public class ReadPropertyFile {
+    public static void main(String[] args)  {
+        String filePath = "config.properties"; // Specify the property file path
+        FileInputStream fileInput = new FileInputStream(); // Open the file
+        Properties properties = new Properties();
+        properties.load(fileInput); // public void load(FileInputStream a);
+      //  properties.load(10); //public void load(int a); 
+        fileInput.close(); // Close the file
+        
+      //  FileInputStream obj = new FileInputStream(); 
+       //obj.close(); 
+      //  close();
+
+        // Access property values
+        String value1 = properties.getProperty("abc");
+        String value2 = properties.getProperty("key2");
+        
+  //      String value1 = properties.getProperty("a");  // public String getProperty(String abc) { }
+        
+    //    String packageName.Properties.getProperty(String abc) 
+        
+     //   System.out.println("Player1 name is : " + value1);
+     //   System.out.println("Player2 name is : " + value2);
+        
+        syso(value1);  Key1: 10
+        syso(value2);  Key2: 20
+    }
+    }
+    
+    
+TeamMember.properties
+
+abc = "Sathya";
+xy = "Mani";
+
+Player1: Sathya
+Player2: Mani
+
+
+
 Final variable in Java
 
 Constructor basics
