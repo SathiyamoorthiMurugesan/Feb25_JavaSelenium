@@ -42,7 +42,7 @@ public class B5ClassOrInterfaceAsParameter {
 //		String str = "Sathya";
 //		obj.startsWith(str);
 		
-//		In String class  we have the below method which returns same class (String) as a parameter 
+		In String class  we have the below method which returns same class (String) as a parameter 
 //		  public String toUpperCase() {
 //	        return toUpperCase(Locale.getDefault());
 //	    }

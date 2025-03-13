@@ -97,14 +97,15 @@ public class B3VariableAsReturnType {
 
 	}
 
-	public void buySoap() {
-//		This method does some work but wont return anything.
-		System.out.println("Bought Soap");
-	}
-
-//	public char buySoap() {
-//		System.out.println("Hello");
+//	public void buySoap() {
+////		This method does some work but wont return anything.
+//		System.out.println("Bought Soap");
 //	}
+
+	public char buySoap() {
+		System.out.println("Hello");
+		return 'a';
+	}
 
 	public void buySoap(int a) {
 
