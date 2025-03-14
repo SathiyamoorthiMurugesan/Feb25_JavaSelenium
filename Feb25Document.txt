@@ -1046,8 +1046,12 @@ Constructor basics - class 2
 
 Day 23 - 15/03/2025
 
+Before this class go through all the previous classes, importantly Final variable and SCP concept
+
 Final variable with Constructor.
 
+String basics
+String immutable 
 
 
 
