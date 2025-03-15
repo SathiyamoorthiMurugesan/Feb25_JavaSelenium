@@ -1,6 +1,6 @@
 package a1BasicsOfJava;
 
-public interface A2CreatingInterfaces {
+public interface A2Interfaces {
 
 	public interface Interface1 {
 
@@ -28,6 +28,6 @@ public interface A2CreatingInterfaces {
 //
 //}
 
-interface A2CreatingInterfaces1 {
+interface A2Interfaces1  {
 
 }
