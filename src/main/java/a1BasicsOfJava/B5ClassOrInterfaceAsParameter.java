@@ -1,9 +1,5 @@
 package a1BasicsOfJava;
 
-import java.util.Collection;
-import java.util.ListIterator;
-import java.util.Locale;
-
 public class B5ClassOrInterfaceAsParameter {
 	
 	static int aa = 10;
@@ -27,7 +23,7 @@ public class B5ClassOrInterfaceAsParameter {
 //		likewise we can use interface as a parameter too
 		
 //		Java Example:
-		String
+//		String
 		
 //		Class as a parameter
 		
@@ -42,7 +38,7 @@ public class B5ClassOrInterfaceAsParameter {
 //		String str = "Sathya";
 //		obj.startsWith(str);
 		
-		In String class  we have the below method which returns same class (String) as a parameter 
+//		In String class  we have the below method which returns same class (String) as a parameter 
 //		  public String toUpperCase() {
 //	        return toUpperCase(Locale.getDefault());
 //	    }

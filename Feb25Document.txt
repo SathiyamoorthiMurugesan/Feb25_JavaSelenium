@@ -1044,14 +1044,42 @@ Constructor basics - class 2
 
 **************************************************************************************
 
-Day 23 - 15/03/2025
+Day 23 - 17/03/2025
 
 Before this class go through all the previous classes, importantly Final variable and SCP concept
 
 Final variable with Constructor.
 
 String basics
-String immutable 
+String immutable
+
+*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+TOPICs WE LEANRED TILL NOW
+
+Class
+Interface
+variables
+Access Modifier
+static
+Method
+	static or non-static 
+	parameter or without parameter
+	return type or without return type
+Data type - Variables
+	Local Variable
+	Non static variable
+	static variable
+Object Creation
+Constructor
+Final variable
+String basic and String immutable, why?
+
+**************************************************************************************
+
+Day 24 - 18/03/2025
+
+Interface in detail
 
 
 
