@@ -8,7 +8,9 @@ public class ReadPropertiesFile {
         Properties properties = new Properties();
         try {
             // Load the properties file
-            FileInputStream fileInputStream = new FileInputStream("config.properties");
+        //	String filepath=new String("C:\\Users\\karth\\git\\Feb25_JavaSelenium\\src\\main\\resources\\config.properties");
+        	String filepath="C:\\Users\\karth\\git\\Feb25_JavaSelenium\\src\\main\\resources\\config.properties";
+            FileInputStream fileInputStream = new FileInputStream(filepath);
             properties.load(fileInputStream);
             
             // Access the properties
