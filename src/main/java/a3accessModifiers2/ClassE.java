@@ -1,6 +1,6 @@
-package accessModifiers2;
+package a3accessModifiers2;
 
-import accessModifiers1.ClassA;
+import a2accessModifiers1.ClassA;
 
 public class ClassE {
 

@@ -1077,9 +1077,19 @@ String basic and String immutable, why?
 
 **************************************************************************************
 
-Day 24 - 18/03/2025
+Day 24 - 19/03/2025
+
+Constructor with Final - explain in words
 
 Interface in detail
+
+**************************************************************************************
+
+Day 25 - 20/03/2025
+
+How to call interface body methods 
+
+Abstract class 
 
 
 

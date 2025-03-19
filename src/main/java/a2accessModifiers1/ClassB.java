@@ -1,4 +1,4 @@
-package accessModifiers1;
+package a2accessModifiers1;
 
 public class ClassB extends ClassA {
 
