@@ -1,7 +1,9 @@
-package a1BasicsOfJava;
+package a3InterfaceInDetail;
 
-public interface A2CreatingInterfaces {
-
+public interface A6NestedInterface {
+	
+//	WebDriver
+	
 	public interface Interface1 {
 
 	}
@@ -33,5 +35,6 @@ public interface A2CreatingInterfaces {
 //}
 
 interface A2CreatingInterfaces1 {
+
 
 }

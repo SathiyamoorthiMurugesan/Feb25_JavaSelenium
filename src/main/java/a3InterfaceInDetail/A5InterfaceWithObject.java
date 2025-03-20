@@ -3,8 +3,8 @@ package a3InterfaceInDetail;
 public interface A5InterfaceWithObject {
 	
 //	* An interface can have 
-//		* either body methods (static, default, private) 
-//		* or body less methods (public and default (explicitly)) 
+//		* either body methods (static, default(explicit), private) 
+//		* or body less methods (public and default (implicit)) 
 //		* or both
 //	* When an interface have only body less methods, then 
 //		there is no meaning/use of creating object for the interface
@@ -21,7 +21,7 @@ public interface A5InterfaceWithObject {
 //		* private method
 //			* within interface - only using within interface 
 //			* outside interface - can not use private method outside of the interface.
-//		* default (implicitly)
+//		* default (explicit)
 //			* 
 
 }

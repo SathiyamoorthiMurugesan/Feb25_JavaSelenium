@@ -14,9 +14,9 @@ public interface A4InterfaceWithAccessModifiers {
 
 	public void method1(); 
 
-	private void method2() {
-
-	}
+//	private void method2() {
+//
+//	}
 
 //	protected void method3();
 

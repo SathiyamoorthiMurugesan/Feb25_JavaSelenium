@@ -1087,7 +1087,7 @@ Interface in detail
 
 Day 25 - 20/03/2025
 
-How to call interface body methods 
+How to call interface body methods (static, private and default(explicitly mention) 
 
 Abstract class 
 
