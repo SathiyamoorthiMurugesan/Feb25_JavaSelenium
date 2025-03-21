@@ -20,4 +20,7 @@ abstract class A2AbstractWithMethods1 {
 
 abstract class A2AbstractWithMethods2 {
 	public abstract void methodA();
+	
 }
+
+

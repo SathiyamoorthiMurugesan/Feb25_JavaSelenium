@@ -24,21 +24,6 @@ public class A1LearnAbstract {
 	 * You can not create abstract static method 
 	 */
 	
-//	Assume
-//	1. interface1 has bodyLessMethod1
-//	2. abstractClass1 has bodylessMethod2 and bodyMethod2
-//	3. TestClass1 has bodyMethod3
-//	4. TestClass2 has bodyMethod4
-//	5. TestClass1 "implements" interface1
-//		* In TestClass1, we need to implement bodyLessMethod1
-//	6. TestClass2 "extends" AbstractClass1
-//		* In TestClass2, we need to implement bodyLessMethod2
-//	7. abstractClass1 "implements" interface1
-//		* Now, we dont need to implement bodyLessMethod1 in abstractClass1.
-//	8. As we already know, TestClass2 "extends" to AbstractClass1 which "implements" interface1
-//		* So, in TestClass2, we need to implement bodyLessMethod1 and bodyLessMethod2
-//		* If we create Object for TestClass2:
-//			By using that object, we can also call "whatever non static methods in parent class or interface"
 
 	public static void main(String[] args) {
 
