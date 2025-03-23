@@ -1097,6 +1097,42 @@ Day 26 - 21/03/2025
 
 How to call Abstract class methods 
 
+**************************************************************************************
+
+Day 27 - 22/03/2025
+
+Is Java OOPs language? explain?
+
+OOP - Object oriented programming
+Java is not 100% OOPs language
+Because of primitive data types - they are not object
+
+OOPs concepts
+	* Encapsulation - En + capsule + lation... block - {  } 
+	* Abstraction
+	* Inheritance in detail
+	* Polymorphism
+		* Overloading - compile time polymorphism
+		* Overriding - run time polymorphism
+		
+Different type of Object creation
+
+Multiple inheritance
+
+**************************************************************************************
+
+Day 28 - 25/03/2025
+
+Multi-level inheritance
+
+examples of Java, selenium for Multiple and Multilevel inheritance
+
+
+
+ 
+
+
+
 
 
 
