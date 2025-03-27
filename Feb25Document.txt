@@ -1175,6 +1175,14 @@ Day 30 - 27/03/2025
 
 final
 Understanding println() method
+main method understanding
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Java keywords 
+this and this();
+
+
 
 
 
