@@ -1191,7 +1191,6 @@ super and super();
 
 ***********************************************************************************
 
-
 Day 32 - 1/04/2025
 
 Constructor in detail
@@ -1209,9 +1208,26 @@ Constructor in detail
 11) We can create a final variable without initiating but we need to initialize in all the constructors
 12) When default cons. is implicitly present and we create a parameterized cons., then default cons. will vanish.
 
+Blocks in Java
+
+static block in java
 
 
+***********************************************************************************
 
+Day 33 - 4/04/2025
+
+Exception handling 
+
+Errors and Exception
+
+***********************************************************************************
+
+Day 34 - 5/04/2025
+
+Throw and Throws Exception in Java
+
+Custom Exception
 
 
 
