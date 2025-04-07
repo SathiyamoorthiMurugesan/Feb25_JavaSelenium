@@ -1233,10 +1233,24 @@ Custom Exception
 
 Day 35 - 6/04/2025
 
+if condition
 
+***********************************************************************************
 
+Day 35 - 7/04/2025
 
+for loop in java
 
+Homework - Java pattern related coding questions.
+
+1. Nested for loop. Parent loop for - row; child loop for column
+2. temp variable 
+3. Println or print 
+4. where and when to use break
+5. initialization of parent for loop
+6. initialization of child for loop
+7. condition used in parent for loop
+8. condition used in child for loop
  
 
 
