@@ -1308,4 +1308,20 @@ do while loop
 
 Scanner class 
 
+array basic
+
+***********************************************************************************
+
+Day 40 - 16/04/2025
+
+array in detail
+
+Home work 
+array programming questions. 
+	1. Sorting an array
+	2. find the largest number in an array
+	3. find the second largest number in an array
+	4. reverse an array
+	
+	
 
