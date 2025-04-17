@@ -1323,5 +1323,66 @@ array programming questions.
 	3. find the second largest number in an array
 	4. reverse an array
 	
+
+***********************************************************************************
+
+Day 41 - 17/04/2025
+
+ **Java array programming questions** (without using any Collections like `ArrayList`, `HashMap`, etc.). 
+ These are useful for interviews and practice, especially when you're restricted to core array operations.
+
+---
+
+### 🔰 **Beginner Level**
+1. **Find the maximum and minimum elements in an array.**
+2. **Reverse an array.**
+3. **Find the sum of all elements in the array.**
+4. **Find the average of array elements.**
+5. **Check if an array contains a specific value.**
+6. **Copy all elements of one array into another.**
+7. **Count the number of even and odd elements in an array.**
+8. **Merge two arrays into a third array.**
+9. **Find the second largest and second smallest elements.**
+10. **Left rotate an array by one position.**
+
+---
+
+### 🔁 **Intermediate Level**
+11. **Sort an array without using built-in sort functions (e.g., Bubble Sort, Selection Sort).**
+12. **Remove duplicate elements from an array.**
+13. **Insert an element at a specific position in the array.**
+14. **Delete an element from a specific position in the array.**
+15. **Find the frequency of each element in the array.**
+16. **Find common elements between two arrays.**
+17. **Find the missing number in a sequence of `n` numbers.**
+18. **Check if two arrays are equal (same elements and order).**
+19. **Shift all zeroes to the end of the array.**
+20. **Separate positive and negative numbers in an array.**
+
+---
+
+### 💡 **Advanced Level**
+21. **Find the subarray with the maximum sum (Kadane's algorithm).**
+22. **Check if the array is a palindrome.**
+23. **Find all pairs in the array whose sum equals a specific number.**
+24. **Rotate the array by `k` positions.**
+25. **Find the majority element (element that appears more than n/2 times).**
+26. **Rearrange array so that even indices have even numbers and odd indices have odd numbers.**
+27. **Find the intersection and union of two arrays.**
+28. **Move all negative elements to one side of the array.**
+29. **Find the longest increasing subsequence in the array (without Collections).**
+30. **Find the first non-repeating element in the array.**
+
 	
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+For Each loop details
+
+***********************************************************************************
+
+Day 42 - 18/04/2025
+
+jagged array 
+multi dim array
+
 
