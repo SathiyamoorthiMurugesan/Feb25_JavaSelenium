@@ -1385,4 +1385,6 @@ Day 42 - 18/04/2025
 jagged array 
 multi dim array
 
+String class in detail
+
 
