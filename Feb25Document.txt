@@ -1387,4 +1387,11 @@ multi dim array
 
 String class in detail
 
+Home work 
+
+1. Learn array and programming questions
+2. Arrays class 
+3. String methods
+4. String interview program questions
+
 
