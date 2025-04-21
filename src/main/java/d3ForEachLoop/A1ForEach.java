@@ -1,6 +1,6 @@
 package d3ForEachLoop;
 
-public class ForEach {
+public class A1ForEach {
 
 
 	public static void main(String[] args) {

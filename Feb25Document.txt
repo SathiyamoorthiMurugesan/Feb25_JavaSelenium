@@ -1394,4 +1394,23 @@ Home work
 3. String methods
 4. String interview program questions
 
+***********************************************************************************
+
+Day 43 - 20/04/2025
+
+Thread concept
+
+StringBuilder and StringBuffer
+
+String programming interview questions without using collections.
+
+Arrays
+
+***********************************************************************************
+
+Day 44 - 21/04/2025
+
+String interview questions
+
+*************************************************************************************
 

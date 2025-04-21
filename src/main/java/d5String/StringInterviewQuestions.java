@@ -1,10 +1,12 @@
 package d5String;
 
-import array.DemoArray;
+import d2Array.A3ArrayGenericMethods;
 
 public class StringInterviewQuestions {
 
 	public static void main(String[] args) {
+		
+		StringInterviewQuestions obj = new StringInterviewQuestions();
 //		reverseAStringUsingCharAt("Sathya");
 //		
 //		String reversedString = reverseAStringUsingCharAt("Selvi");
@@ -17,7 +19,59 @@ public class StringInterviewQuestions {
 //		countWordsInASentence();
 		
 		reverseAllWordsInASentence();
+		
+//		obj.getEachCharFromString("Sathya");
+//		obj.getEachCharFromString("Sathya", 'a');
+//		obj.getCountOfGivenCharFromString("Sathya", 'x');
+		
+//		System.out.println("Sathya".indexOf('s'));
+		
+//		String sentence = "Despite the stormy weather, she made it to the meeting on time with a smile on her face.";
+//		String[] words = sentence.split(" ");
+//		A3ArrayGenericMethods gen = new A3ArrayGenericMethods();
+//		gen.printArrayUsingBasicForLopp(words);
+		
+		
+//		String newString = sentence.replaceAll(",", "");
+//		String newString1 = newString.replaceAll(".", "");
+//		String[] allWords = newString1.split(" ");
+		
+//		System.out.println(sentence.replaceAll(",", ""));
+//		System.out.println(sentence.replace(".", "").replaceAll(",", ""));
+//		
+//		String[] allWords = sentence.replace(".", "").replaceAll(",", "").split(" ");
+//		System.out.println(allWords.length);
+//		gen.printArrayUsingBasicForLopp(allWords);
 	}
+	
+//	This method helps to get each char from the given String
+	public void getEachCharFromString(String a) {
+		for(int i = 0; i<a.length();i++) {
+			System.out.println(a.charAt(i));
+		}
+	}
+	
+//	Write a method to check whether the given letter is present in the given String or not.
+	public void getEachCharFromString(String a, char ch) {
+		for(int i = 0; i<a.length();i++) {
+			if(a.charAt(i) == ch) {
+				System.out.println("String "+a+" has the given character "+ch);
+				break;
+			}
+		}
+	}
+	
+//	Write a method to check whether the given letter is repeated how many times
+	public void getCountOfGivenCharFromString(String a, char ch) {
+		int count = 0;
+		for(int i = 0; i<a.length();i++) {
+			if(a.charAt(i) == ch) {
+				count++;
+			}
+		}
+		System.out.println(count);
+	}
+	
 	
 	public static void practiceCharAtMethod() {
 		String str = "Sathya";
@@ -97,7 +151,7 @@ public class StringInterviewQuestions {
 		String[] array = str.split(" ");
 		System.out.println(array.length);
 		
-		DemoArray obj = new DemoArray();
+		A3ArrayGenericMethods obj = new A3ArrayGenericMethods();
 		
 //		obj.printStringArrayUsingBasicForLoop(array);
 		
@@ -107,7 +161,7 @@ public class StringInterviewQuestions {
 		System.out.println(temp);
 		
 		String arr[] = temp.split(" ");
-		obj.printStringArrayUsingBasicForLoop(arr);
+		obj.printArrayUsingBasicForLopp(arr);
 		
 //		String abc = " .,";
 //		String[] arr1 = str.split(abc);

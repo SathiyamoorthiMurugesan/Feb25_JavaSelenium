@@ -1,6 +1,6 @@
 package d5String;
 
-public class StringLearning {
+public class A1StringLearning {
 	
 /*
  * Questions based on a string
