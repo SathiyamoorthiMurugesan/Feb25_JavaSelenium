@@ -1417,8 +1417,6 @@ String interview questions
 3) reverse each words in a sentence
 4) count each words/letters in a sentence or word respectively
 
-*************************************************************************************
-
 ***********************************************************************************
 
 Day 45 - 22/04/2025
@@ -1442,3 +1440,18 @@ Homework
 4) also for the above 3, write generic methods 
 5) How to create a folder, file or excel using Java
 
+***********************************************************************************
+
+Day 46 - 28/04/2025
+
+Excel reading
+
+***********************************************************************************
+
+Day 47 - 29/04/2025
+
+Introduction to collection
+
+Collection Hierarchy
+
+ArrayList and HashSet basics
