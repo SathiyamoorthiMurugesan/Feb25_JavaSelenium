@@ -30,11 +30,11 @@
 //	* Collection is implemented with standard data structure, so it has many useful methods
 //	 
 //4) Hierarchy in Collection
-//	* refer - https://www.javatpoint.com/collections-in-java
+//	* refer - https://www.tpointtech.com/collections-in-java
 //	* Iterable interface is the parent of Collection interface
 //	* It has below methods ->what?
 //	* 	Iterator<T> iterator();
-//	* 	forEach(Consumer<? super T> action)
+//	* 	void forEach(Consumer<? super T> action)
 //	* 	SplitIterator<T> splitIterator()
 //	
 //5) Useful methods in Collection interface
@@ -61,7 +61,7 @@
 //	* It extends Collection interface
 //	* Its an ordered collection, which means we can find any element using the index
 //	* LIST ALLOWS DUPLICATES 
-//	* Classes which extends List Interface are, ArrayList, LinkedList, Vector
+//	* Classes which extends List Interface are ArrayList, LinkedList, Vector
 //	* Allows MULTIPLE null elements
 //	* Useful methods 
 //	* 	includes all the methods in Collection interface
@@ -162,7 +162,7 @@ package e4Collections;
 import java.util.Collection;
 import java.util.Iterator;
 
-public class CollectionInterface  {
+public class A1CollectionInterface  {
 	
 //	ArrayList
 	

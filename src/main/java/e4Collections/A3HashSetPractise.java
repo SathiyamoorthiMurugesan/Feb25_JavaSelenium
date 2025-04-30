@@ -15,8 +15,7 @@ package e4Collections;
 			HashSet<String> set1 = new HashSet<String>();
 			HashSet<String> set2 = new HashSet<String>(12);
 			HashSet<String> set3 = new HashSet<String>(set2);
-			HashSet<String> set3 = new HashSet<String>(new ArrayList<String> AL);
-			HashSet<String> set4 = new HashSet<String>(12, 0.75f);
+			HashSet<String> set4 = new HashSet<String>(new ArrayList<String> AL);
 			Set s = Collections.synchronizedSet(new HashSet(...));
 	 *	Useful methods in Hashset
 	 * 		All the methods declared in Collection and Set interfaces are implemented in this class and along with that we have below methods
@@ -62,7 +61,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.stream.Stream;
 
-public class HashSetPractise {
+public class A3HashSetPractise {
 
 	static int a;
 	static boolean b;

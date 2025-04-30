@@ -8,10 +8,10 @@ import java.util.List;
 import java.util.ListIterator;
 import java.util.Spliterator;
 
-public class ArrayListClass {
+public class A2ArrayListClass {
 
 //	WebDriver
-//	/* ArrayList
+//	/* ArrayList - Class
 //	 * 	It implements List Interface
 //	 * 	Its a resizeable array
 //	 * 	Each ArrayList has a capacity and it will increase automatically if we add values more than the given capacity
