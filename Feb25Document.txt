@@ -1609,4 +1609,200 @@ public class ExcelReader {
 }
 
 
+*********************************************************
+Day 51 (16/05/2024)
+
+* What is Software Testing -SDLC and STLC
+* What is manual testing
+* What is functional Testing
+* What is regression testing
+* Where do we need the automation most? Regression.
+
+🧪 Types of Functional Testing:
+	Type									Description
+Unit Testing					Tests individual functions or methods (often by developers).
+Smoke Testing					Basic checks to verify the application is stable.
+Sanity Testing					Quick test to check specific functionality after changes.
+Regression Testing				Ensures new changes haven't affected existing features.
+Integration Testing				Verifies interaction between modules or components.
+System Testing					End-to-end testing of the entire application.
+User Acceptance Testing (UAT)	Performed by end users to validate business functionality.
+
+
+
+What is OS based application (windows/iOS/Linex)
+What is Web based Application
+
+What is browser - Basic functionalities in browser 
+What is Web-Based application
+	* What are the basic operation 
+	* What is elements
+	
+Difference between Web Browser and Web application
+	Web Browser
+		* Chrome
+		* Edge
+		* Firefox
+		* HTML Browser
+		* headleass browser
+	Web application
+		* Facebook
+		* Flipkart
+		* HDFC website
+		* Jira
+	
+What and all we see in a browser
+	* URL bar
+	* Minimize button
+	* Maximize button
+	* New tab
+	* Close 
+	* New window
+	* Forward
+	* Backward
+	* Refresh
+	
+* what are the actions we do on a browser
+or
+* what are the basic properties of a browser 
+
+browser open
+url enter
+new tab open
+tab close 
+min 
+max
+entire browser close
+scroll
+zoom
+navigate - back, forward, refresh
+
+With in application what do we do
+
+application launch - url type
+text enter
+button click
+check box click
+radio box click
+drop down
+links click
+Text read/verify
+Tab title
+Mouse hover
+double click
+Right click
+Date choose
+Drag and drop
+File upload
+Verification/Assert 
+page load speed/time(synchronization)
+Keyboard
+pop up
+	alert
+	tab
+	web alert like info screen
+	Desktop window
+frames
+wait
+WebTable
+
+		
+What and all we see in a web application (Textbox, checkbox, drop down, button, radio button, link, text, image, video,..etc)
+What are the actions we do in an application (click, write, drag and drop, scroll)
+
+
+*********************************************************
+Day 52 (17/05/2024)
+
+Selenium Basics
+
+Why we need automation - saves Time and Man power
+Benefits
+
+Things to be considered before starting web automation.
+
+Different Automation tools and Editor
+Automation tools 
+	* Selenium
+	* UFT (QTP)
+	* PlayWrite
+	* RPA - Robotic process automation
+	
+Programming language
+	* Java
+	* Python
+	* .Net
+	* Ruby
+	* C##
+	* TypeScript
+	* JavaScript
+	
+Editor 
+	* Eclipse
+	* STS - Sprint Tool Suite
+	* InteliJ
+	* Visual Studio
+	
+Front end development tools and backend application tools
+
+Front End:
+	* HTML
+	* CSS
+	* Java, JavaScript
+	* Angular JS
+	* .Net
+	
+Back End
+	* Java/JavaScript/Angular/.Net
+	* Database management
+	* Cloud
+	* Source Code Management tools (SCM) - Git, Bit Bucket, AWS, Azure
+	
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+* In manual testing, we do the testing - (we are the tester)
+* In Automation, who would work as a tester - WebDriver (it is the automation tester)
+
+
+What is WebDriver 
+* WebDriver - interface
+* WebDriver is nothing but us(TESTERs).
+* The main properties of a browser are created as methods inside WebDriver interface
+
+* Why WebDriver is created as a interface?
+
+* WebDriver interface methods 
+	* Important concepts  
+		* return type of findElement(By by) and findElments(By by) and explain why?
+		* What is sessionId 
+		* What is windowHandle 
+		* return type of windowHandle() windowHandles() and explain why?
+
+Selenium Hierarchy
+	* SearchContext - interface
+	* WebDriver - interface (Basic actions we do on the Browser are written in this interface)
+	* RemoteWebDriver - Class
+	* ChromeDriver, EdgeDriver, FirefoxDriver, SafariDriver - Class
+	
+interface SearchContext {
+}
+
+interface WebDriver extends SearchContext {
+
+}
+
+class RemoteWebDriver implements WebDriver {
+
+}
+
+class ChromeDriver extends RemoteWebDriver {
+
+}
+	
+What is the significance of Remote WebDriver?
+What is the difference between Chrome Browser and ChromeDriver (likewise other browsers) - We will see it later
+
+
+
+
 
