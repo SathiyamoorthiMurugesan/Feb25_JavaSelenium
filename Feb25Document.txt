@@ -1803,6 +1803,136 @@ What is the significance of Remote WebDriver?
 What is the difference between Chrome Browser and ChromeDriver (likewise other browsers) - We will see it later
 
 
+************************************************************************************
+Day 53 (19/05/2024)
 
+What is WebElement
+	* Whatever element you see on a web page is called WebElement
+	* It is a interface which follows SearchContext (In Java)
+
+How do you find or interact with a WebElement:
+
+	* WebElements in a web page are represented by HTML tags
+	  
+
+	What is DOM in browser
+The Document Object Model (DOM) is a programming interface for web documents. 
+It represents the page so that programs can change the document structure, style, and content. 
+Essentially, the DOM provides a structured representation of the document (as a tree of objects), 
+and it defines a way that the structure can be accessed from programs 
+so that they can change the document's content, structure, and style.
+
+How do you open the DOM of a web page
+	* DOM (right click on a page and inspect or F12 or Ctrl+Shift + I)
+	
+	* diff types of tags
+		* html
+		* head
+		* body
+		* header
+		* input
+		* div
+		* ul
+			* li
+		* a 
+		* svg
+		* select (drop down)
+			* option
+		* frame or iframe (small html)
+		* table
+			* tr 
+			* th
+			* td
+			
+		* <table>
+		<body>
+			<div>
+				<tr>
+					<th>
+					<th>
+					<th>
+					<th>
+				<tr>
+					<td>
+					<td>
+					<td>
+					<td>
+				<tr>
+					<td>
+					<td>
+					<td>
+					<td>
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+HTML tag structures and attributes
+
+* attributes
+	whatever key value pair we see inside any tag is called attributes
+	
+	<div> - start tag
+	
+	</div> - end tag
+	
+	<div key1 = "val1" key2 = "val2" > - start tag
+	"text" 
+	</div>
+	
+	where
+	div - tagName
+	key1, key2 - attributes
+	val1, val2 - attribute's value
+	"text" - tag's display name
+
+How to find element in a page 
+
+<html>
+
+ancestor(div)
+  parent(div)
+	parent(ul)
+		child(li)
+			child(select)
+		child(ul)
+			child(li)
+			child(li)
+	parent(ul)
+	parent(li)
+ancestor(div)
+	parent(div)
+		child(div)
+</html>
+
+ancestor
+parent
+child
+siblings
+following ancestor, parent, child, siblings
+preceding ancestor, parent, child, siblings
+text
+contains(text, 'Sathya')
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+	
+	
+WebElement methods() - we will see it later
+	
+click();
+submit();
+sendKeys();
+clear();
+getTagName();
+getDomAttribute();
+getAttribute();
+isSelected();
+isDisplayed();
+isEnabled();
+getText();
+findElement();
+findElements();
+getLocation();
+getSize();
+getRect();
+getCssValue();
 
 
