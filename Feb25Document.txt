@@ -1912,8 +1912,84 @@ preceding ancestor, parent, child, siblings
 text
 contains(text, 'Sathya')
 
-&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+************************************************************************************
+Day 54 (20/05/2024)
+
+Locators we see later
+
+XPath basic
+	* Explain how the element is placed in xml. From our element to html tag.
+
+XPATH - xml path
+
+two types of xpath
+
+Absolute xpath 
+Relative xpath 
+
+1) absolute xpath - like using steps 
+	* single slash - /
+	* full path need to written - from html
+	* /html/body/nav/div/div/ul[1]/li[1]/span
+
+	* If there is a change in UI, the above order will change and we can not find our desired element 
+		using the above xpath. 
+	* So using this xpath is  NOT RECOMMENDED.
 	
+2) Relative xpath
+
+Syntax
+//tagName[@attributeName = 'value']OR -- Most preferred
+//*[@attributeName = 'value'] OR 
+//tagName[@attributeName = "value"] 
+
+String xpath = "//tagName[@attributeName = \"value\"]"
+
+************************************************************************************
+Day 55 (21/05/2024)
+
+Relative xpath 
+
+basic and simple xpath
+and
+or
+you can also use * instead of tagName
+text()
+contains with text(), value
+contains with @attribute, value
+//following::tagName
+//preceding::tagName
+//ancestor::tagName
+//parent::tagName
+//child::tagName
+//following-sibling::tagName
+//preceding-sibling::tagName
+We can use numbers along with xpath 
+
+by writing single xpath, you can access multiple elements too (eg: drop down values or menu values)
+
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+//tagName[@attribute = 'value']//following::tagName
+
+When element is not found - we get elementNotFoundException
+
+Why element is not found, because we wrongly identified the element
+1) spelling mistake
+2) flow mistake
+3) xpath wrong
+4) timing - synchronization between code run and web page loading
+
+StaleElementException
+	* Element is available in DOM but not visible in UI
+		
+https://www.guru99.com/xpath-selenium.html#text
+https://www.guru99.com/locators-in-selenium-ide.html
+
+
+
 	
 WebElement methods() - we will see it later
 	
