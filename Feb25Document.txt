@@ -1988,27 +1988,172 @@ StaleElementException
 https://www.guru99.com/xpath-selenium.html#text
 https://www.guru99.com/locators-in-selenium-ide.html
 
+************************************************************************************
+Day 56 (23/05/2024)
+
+How do you open a web site in your system? 
+
+Chrome browser and ChromeDriver difference.
+
+Chrome Browser
+What it is: Google Chrome is a web browser used by people to browse websites.
+
+Purpose: It is designed for human interaction, displaying websites, running web apps, and accessing online content.
+
+ChromeDriver
+What it is: ChromeDriver is a separate executable that WebDriver (from Selenium, for example) uses to control the Chrome browser.
+
+Purpose: It acts as a bridge between test scripts and the Chrome browser.
+
+Compatibility issue. 
+
+To manage compatibility issue, we have 
+WebDriverManager - we will see it later 
+
+WebDriverManager automates all of this. It:
+
+Downloads the appropriate driver version.
+
+Sets the path automatically.
+
+Keeps drivers up to date.
 
 
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Selenium - its a tool to automate web application. 
+
+Official website - https://www.selenium.dev/
+
+Selenium 3 and 4 difference
+
+Selenium is written in many languages 
+	Java
+	Python
+	C# (.Net)
+	Ruby
+	JavaScript
 	
-WebElement methods() - we will see it later
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Selenium Hirarchy 
+* SearchContext Interface (findElement, findElements)
+* WebDriver Interface ( Basic methods for a browser) 
+* RemoteWebDriver Class( all basic methods are implemented here)
+* Classes (ChromiumDriver)ChromeDriver, (GeckoDriver)FirefoxDriver, (ChromiumDrier)MS Edge,  etc..
+
+
+interface SearchContext methods
+
+  List<WebElement> findElements(By by);
+  WebElement findElement(By by);
+  
+interface WebDriver methods 
+
+  void get(String url);
+  @Nullable String getCurrentUrl();
+  @Nullable String getTitle();
+  @Override
+  List<WebElement> findElements(By by);
+  @Override
+  WebElement findElement(By by);
+  @Nullable String getPageSource();
+  void close();
+  void quit();
+  Set<String> getWindowHandles();
+  String getWindowHandle();
+  TargetLocator switchTo(); // TargetLocator - Interface present inside WebDriver interface
+  Navigation navigate(); // Navigation - Interface present inside WebDriver interface
+  Options manage(); // Options - Interface present inside WebDriver interface
+  
+class RemoteWebDriver 
+	* All methods of WebDriver and WebElement interfaces are implemented here. Along with that some addtional test methods are also there
 	
-click();
-submit();
-sendKeys();
-clear();
-getTagName();
-getDomAttribute();
-getAttribute();
-isSelected();
-isDisplayed();
-isEnabled();
-getText();
-findElement();
-findElements();
-getLocation();
-getSize();
-getRect();
-getCssValue();
+class ChromeDrive or FirefoxDriver or EdgeDriver
+	* Browser specific methods are written in the classes
+	
+
+public interface WebElement extends SearchContext, TakesScreenshot;
+	
+WebElement methods();
+
+  void click();
+  void submit();
+  void sendKeys(CharSequence... keysToSend);
+  void clear();
+  String getTagName();
+  default @Nullable String getDomProperty(String name) {
+    throw new UnsupportedOperationException("getDomProperty");
+  }
+  default @Nullable String getAriaRole() {
+    throw new UnsupportedOperationException("getAriaRole");
+  }
+  default @Nullable String getAccessibleName() {
+    throw new UnsupportedOperationException("getAccessibleName");
+  }
+  boolean isSelected();
+  boolean isEnabled();
+  boolean isDisplayed();
+  String getText();
+  @Override
+  List<WebElement> findElements(By by);
+  @Override
+  WebElement findElement(By by);
+  default SearchContext getShadowRoot() {
+    throw new UnsupportedOperationException("getShadowRoot");
+  }
+  Point getLocation();
+  Dimension getSize();
+  Rectangle getRect();
+  String getCssValue(String propertyName);
+
+  &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+  
+  
+  
+  
+  
+  We find elements in a page using locators 
+
+Locators in selenium - 
+	locator value should not be duplicate. must be unique
+		means, id = "sathya" should be present only once
+
+id 
+	* most preferred 
+	* do not use if it has numbers in it. 
+	* id = "abc123"; - DO NOT USE
+		* if we reload again, the id value may change to "abc114"
+name
+className
+	* with more spaces 
+tagName
+linkText
+partialLinkText
+CSS selector
+xpath -XML path
 
 
+id, name, className(class) - when these values are unique we can use them directly. 
+When they are not unique, we use either xpath or CSS
+
+findElement(By.id(""));
+findElement(By.name(""));
+findElement(By.class(""));
+findElement(By.linkText("selenium"));
+findElement(By.linkText("Testing Frameworks"));
+findElement(By.linkText("Logging Frameworks"));
+findElement(By.parialLinkText("Frameworks"));
+
+
+	By obj1 = By.className("");
+		WebElement ele = driver.findElement(obj1);
+		ele.click();
+		
+		driver.findElement(By.className("")).click();;
+		
+		driver.findElement(By.id("")).sendKeys();
+
+* when id, name, className attributes are present in an element tag but they not unique, then we go to xpath 
+* When id, name, className attributes are not present inside an element's tag, then also we use xpath
+  
