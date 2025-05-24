@@ -1,4 +1,4 @@
-package e4Collections;
+package e3Collections;
 
 // *HashSet is an unordered collection and doesn't maintain any order
 //	*but we can predict it in LinkedHashSet

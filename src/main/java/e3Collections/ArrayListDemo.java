@@ -113,7 +113,7 @@
 //	LinkedHashMap
 //	TreeMap
 
-package e4Collections;
+package e3Collections;
 
 //import java.util.ArrayList;
 import java.util.*;

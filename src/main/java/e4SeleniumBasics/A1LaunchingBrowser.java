@@ -1,4 +1,4 @@
-package e5SeleniumBasics;
+package e4SeleniumBasics;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

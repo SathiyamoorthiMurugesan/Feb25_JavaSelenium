@@ -1,4 +1,4 @@
-package e4Collections;
+package e3Collections;
 
 import java.util.Collection;
 import java.util.HashMap;

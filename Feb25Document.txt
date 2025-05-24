@@ -2155,7 +2155,8 @@ Day 57 (24/05/2024)
 
 Why do we create object as below
 
-WebDriver driver = new ChromeDriver();
+WebDriver driver = new ChromeDriver();  //here Overriding concept will be applied. 
+When we call, WebDriver methods will show, but while  we run methods from ChromeDriver or its parent class method will run.
 
 why not 
 
@@ -2164,6 +2165,7 @@ ChromeDriver driver = new ChromeDriver();
 
 System.setProperty("webdriver.chrome.driver", "C:\\Users\\LENOVO\\git\\SaraswathyJavaProject\\drivers\\chromedriver_107.exe");
 ChromeDriver driver = new ChromeDriver();
+
 
 But we do not need to create object like above.
 Because it will cause a problem when we need to open different browser in single driver instance
@@ -2201,38 +2203,44 @@ driver = new FireDriver();
 WebDriver methods - practice
 
 
-		
-		
+
+public interface WebDriver  {
+Options manage();
+}
+
+interface Options {
+
+    void addCookie(Cookie cookie);
+    void deleteCookieNamed(String name);
+    void deleteCookie(Cookie cookie);
+    void deleteAllCookies();
+    Set<Cookie> getCookies();
+    @Nullable Cookie getCookieNamed(String name);
+    Timeouts timeouts();
+    Window window();
+}
+
+interface Window {
+    Dimension getSize();
+    void setSize(Dimension targetSize);
+    Point getPosition();
+    void setPosition(Point targetPosition);
+    void maximize();
+    void minimize();
+    void fullscreen();
+}
+
+interface Timeouts {
+  default Timeouts implicitlyWait(Duration duration) {
+  }
+ 
+ 
+implicitlyWait - in Selenium
+	* In Selenium, implicitlyWait() is used to tell WebDriver to wait for a certain amount of time 
+	when trying to find an element if it is not immediately available.
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+*****************************************************************************
+
 	
 	
   

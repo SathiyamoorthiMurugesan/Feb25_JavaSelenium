@@ -3,7 +3,7 @@
 //		ArrayList<String> AS = new ArrayList<String>(10); //Generic ArrayList, we can only add String
 //		ArrayList<String> AS1 = new ArrayList<String>(AS);
 
-package e4Collections;
+package e3Collections;
 
 import java.util.ArrayList;
 import java.util.Collections;
