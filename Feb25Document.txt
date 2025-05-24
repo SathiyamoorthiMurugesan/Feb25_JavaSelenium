@@ -2109,8 +2109,132 @@ WebElement methods();
 
   &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
   
-  
-  
+Window Handle in Selenium
+
+session id - driver 
+window handle - id unique is for each window opened during above session. its never going to be a duplicate value.
+
+By using a driver's, if we open one or more browser window,
+	each window will be assigned with a ID and its called window handle. 
+	
+Where is the driver's "focus" would be.
+
+String getWindowHandle();// for a single window
+Set<string> getWindowHandles(); // for multiple windows
+
+switching to a newly opened window when only one new window is opened.
+
+
+*************************************************************************************  
+Day 57 (24/05/2024)
+
+1) How to add Selenium to our project
+	* as a dependency
+	* https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+	* Add dependency to your project's pom.xml (learn and know how the dependency is added to your project)
+	* Update the maven project
+	* confirm the dependency is visible on the project under Maven dependencies
+	
+2) Writing a first Selenium code 
+	* How do you launch the Amazon application in Chrome browser? 
+	* Manually
+		* Run chrome.exe file by the tester or user
+		* Enter the url
+	* Through Automation 
+		* ChromeDriver.exe need to be run by WebDriver
+		* How do WebDriver know where is my ChromeDriver.exe?
+			* We need to give the location of ChromeDriver.exe file to the WebDriver 
+			* We need to download it and add it in your project
+		* What is the check here? 
+			* Your installed Chrome browser version should be aligned with ChromeDriver version
+			* Else you will get compatibility issue.
+				
+			
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Why do we create object as below
+
+WebDriver driver = new ChromeDriver();
+
+why not 
+
+ChromeDriver driver = new ChromeDriver();
+
+
+System.setProperty("webdriver.chrome.driver", "C:\\Users\\LENOVO\\git\\SaraswathyJavaProject\\drivers\\chromedriver_107.exe");
+ChromeDriver driver = new ChromeDriver();
+
+But we do not need to create object like above.
+Because it will cause a problem when we need to open different browser in single driver instance
+
+To avoid this we keep WebDriver interface as reference for object
+
+WebDriver interface and ChromeDriver/FirefoxDriver/SafariDriver/EdgeDriver are connected through RemoteWebDriver class
+
+All the methods in WebDriver interface are implemented in RemoteWebDriver.
+
+All browser drivers are extended to RemoteWebDriver
+
+WebDriver driver; 
+driver = new ChromeDriver();
+driver = new FirefoxDriver();
+
+{ 
+
+ChromeDriver driver = new ChromeDriver();
+
+code
+
+driver = new EdgeDriver();
+
+EdgeDriver driver1 = new EdgeDriver();
+
+WebDriver driver = new ChromeDriver();
+
+driver = new EdgeDriver();
+driver = new FireDriver();
+
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+WebDriver methods - practice
+
+
+		
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
   
   
   We find elements in a page using locators 
