@@ -2241,11 +2241,20 @@ implicitlyWait - in Selenium
 	
 *****************************************************************************
 
+Day 58 (25/05/2024)	
 	
-	
+Locators in Selenium 
+
+ We find elements in a page using locators 
   
-  
-  We find elements in a page using locators 
+1) id
+2) name
+3) className
+4) tagName
+5) linkText
+6) partialLinkText
+7) xpath
+8) css
 
 Locators in selenium - 
 	locator value should not be duplicate. must be unique
@@ -2288,4 +2297,20 @@ findElement(By.parialLinkText("Frameworks"));
 
 * when id, name, className attributes are present in an element tag but they not unique, then we go to xpath 
 * When id, name, className attributes are not present inside an element's tag, then also we use xpath
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+CSS Selector
+
+Examples of CSS Selectors
+What You Want to Select			CSS Selector Example								Explanation
+Element by tag						div											Selects all <div> elements
+Element by class					.className									Selects all elements with that class
+Element by ID						#elementId									Selects the element with that ID
+Nested element						div > span									Selects <span> directly inside <div>
+Attribute value						input[name='username']						Input with a name attribute = 'username'
+Partial attribute value				a[href*='login']							Link where href contains "login"
+Multiple classes					div.class1.class2							Element with both class1 and class2
+
+
   
