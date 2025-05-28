@@ -2312,5 +2312,17 @@ Attribute value						input[name='username']						Input with a name attribute = '
 Partial attribute value				a[href*='login']							Link where href contains "login"
 Multiple classes					div.class1.class2							Element with both class1 and class2
 
+*****************************************************************************
+
+Day 59 (27/05/2024)
+
+findElements method 
+
+*****************************************************************************
+
+Day 60 (28/05/2024)
+
+Window Handling! 
+
 
   
