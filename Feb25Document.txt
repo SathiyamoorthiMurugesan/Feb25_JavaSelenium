@@ -2324,6 +2324,29 @@ Day 60 (28/05/2024)
 
 Window Handling! 
 
+Lets consider 3 window - WinA, WinB, WinC
+
+1. Get window handle of the current window - WinA 
+2. do any actions and open many the windows
+3. user getWindowHandles() method to get all window handles
+4. Remember that, your or your driver's focus is still on WinA, even though you see any other window on your screen.
+5. Use for loop or iterator to iterate between the window handles.
+6. To switch to each window handle (window) user switchTo().window(winHandle) method
+7. Once you switch to a window get its title
+8. if the title you get through iteration, matches your expected title then end the for loop.
+
+
+Case study:
+1. Get window handle of the current window - WinA - parent window
+2. do any actions and open another the window
+3. user getWindowHandles() method to get all window handles
+4. Remember that, your or your driver's focus is still on WinA, even though you see any other window on your screen.
+5. Use for loop or iterator to iterate between the window handles.
+6. if the window handle is not parent window's handle then switch to that window
+7. Now you are in the child window
+8. use driver.close() and close the child window
+9. Now, where my driver's focus will be?
+
 *****************************************************************************
 
 Day 61 (29/05/2024)
