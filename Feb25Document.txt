@@ -2324,6 +2324,12 @@ Day 60 (28/05/2024)
 
 Window Handling! 
 
+*****************************************************************************
+
+Day 61 (29/05/2024)
+
+Window Handling!  - Class 2
+
 Lets consider 3 window - WinA, WinB, WinC
 
 1. Get window handle of the current window - WinA 
@@ -2349,9 +2355,96 @@ Case study:
 
 *****************************************************************************
 
-Day 61 (29/05/2024)
+Day 62 (30/05/2024)
 
-Window Handling!  - Class 2
+Alerts in Selenium
+
+What is alert 
+	* Alerts does not let you to proceed with original application unless its been handled.
+	* its a pop up ( web based pop up and OS based pop up)
+
+How do you identify whether its a alert or any other normal web page
+	* Alert does not let you to proceed with original application
+	* Alert does not have any url
+	* you can not inspect an alert 
+
+Types:
+	* Simple/Informational alert - OK(Accept) button along with some text
+	* Prompt alert - Yes(accept) or no(dismiss) alert 
+	* Confirmation Alert - You need to enter a text to proceed further 
+
+
+
+How to handle an alert:
+	* in web page we click a link or button, then it will throw an alert.
+	* Web page's focus will be removed 
+	* We need to manually switch the focus of the webdriver to the alert
+Where the alert is present:
+	WebDriver -> TargetLocator switchTo() - Alert alert();
+	
+	public interface WebDriver {
+	
+	TargetLocator switchTo();
+	
+	interface TargetLocator {
+		Alert alert()
+	}
+	
+	Alert methods 
+	public interface Alert {
+  		void dismiss();
+ 		void accept();
+  		String getText();
+  		void sendKeys(String keysToSend);
+}
+	
+	}
+How do we switch focus to alert 
+	1) Alert alt = driver.switchTo().alert();
+		alt.dismiss(); or alt.accept();
+	2) driver.swithcTo().alert().accept();
+
+Problem we face while working with Alert:- 
+	1) We are expecting an alert after clicking an element
+		also we write a code to manage the alert
+		But sometimes, the alert wont pop up. - Exception:- NoSuchAlertException/NoAlertPresentException
+	2) We are not expecting any alert
+		But alert pops up - Exception: UnhandledAlertException 
+		
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Drop down handling using Selenium
+
+There are two types 
+	* Single selection
+	* Multi selection
+	
+* How Dropdown are configured in a web page
+	* By using select tag and options tag
+		* index
+		* value - attribute
+		* display text - attribute
+		
+	Selenium has a separate class to handle select tag drop down
+		* Select class
+		* first locate the select  tag - and store it in to Webelement
+		* Select select = new Select(WebElement); 
+		
+Important methods 
+	1) selectByIndex(int)
+	2) selectByVisibleText(String)
+	3) selectByValue(String)
+	4) getOptions()
+	5) deselectAll() - works only on multiple select 
+	6) isMultiple()
+	7) selectByContainsVisibleText(String)
+	
+******** You can also access the drop down with out using Select class***********
+
+In that time you need to use - findElements() method
+
+
+		
 
 
   
