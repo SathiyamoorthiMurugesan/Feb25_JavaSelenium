@@ -26,9 +26,10 @@ class B1DropDownInSelenium {
 		driver.get("https://www.hyrtutorials.com/p/html-dropdown-elements-practice.html");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
 
-		WebElement dropDown_Course = driver.findElement(By.id("course"));
-
-		Select select = new Select(dropDown_Course);
+//		WebElement dropDown_Course = driver.findElement(By.id("course"));
+//		Select select = new Select(dropDown_Course);
+		
+		Select select = new Select(driver.findElement(By.id("course")));
 		System.out.println(select.isMultiple());
 
 		List<WebElement> allDDElements = select.getOptions();
