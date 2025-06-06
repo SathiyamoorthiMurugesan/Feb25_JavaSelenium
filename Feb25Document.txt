@@ -2507,8 +2507,14 @@ div - is our element
 Exception we encounter while working with frames or iframes
 	* NoSuchElementException
 	* NoSuchFrameException
+	
+HOME WORK 
+	* Practice frame and nested frames
 
 
+*****************************************************************************
+		
+Day 64 (06/06/2024)
 
 
   

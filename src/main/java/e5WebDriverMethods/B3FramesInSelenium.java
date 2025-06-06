@@ -10,8 +10,40 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class B3FramesInSelenium {
 
 	static WebDriver driver;
+	
+	public static void main(String[] args) throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver", ".\\src\\main\\resources\\drivers\\chromedriver_136.exe");
+		driver = new ChromeDriver();
 
-	public static void main(String[] args) {
+		driver.manage().window().maximize();
+
+		driver.get("https://www.tutorialspoint.com/selenium/practice/frames.php");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
+		
+		System.out.println(driver.findElements(By.tagName("iframe")).size());
+		
+		Thread.sleep(2000);
+		WebElement ele = driver.findElement(By.xpath("//a[text() =' Selenium Tutorial']"));
+		ele.click();
+		
+		
+		driver.switchTo().frame(0);
+		Thread.sleep(2000);
+		WebElement ele1 = driver.findElement(By.xpath("//a[text() =' Selenium Tutorial']"));
+		ele1.click();
+		
+//		driver.switchTo().frame(1);
+		
+		driver.switchTo().defaultContent();
+		
+		driver.switchTo().frame(1);
+		Thread.sleep(2000);
+		WebElement ele2 = driver.findElement(By.xpath("//a[text() =' Selenium Tutorial']"));
+		ele2.click();
+		
+	}
+
+	public static void main1(String[] args) {
 		System.setProperty("webdriver.chrome.driver", ".\\src\\main\\resources\\drivers\\chromedriver_136.exe");
 		driver = new ChromeDriver();
 
@@ -70,5 +102,7 @@ public class B3FramesInSelenium {
 		driver.switchTo().defaultContent();
 
 	}
+	
+	
 
 }
