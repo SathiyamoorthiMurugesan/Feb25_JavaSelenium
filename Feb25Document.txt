@@ -2516,5 +2516,27 @@ HOME WORK
 		
 Day 64 (06/06/2024)
 
+Actions class in detail
+
+The Actions class in Selenium (often referred to as Actions or Actions Class) is used to handle complex user interactions 
+like mouse movements, key presses, click and hold, drag and drop, etc. 
+
+
+*****************************************************************************
+		
+Day 64 (09/06/2024)
+
+Robot class in detail
+
+The Robot class in Java (from java.awt.Robot) is often used in Selenium for simulating low-level 
+keyboard and mouse interactions that Selenium WebDriver itself cannot handle, such as:
+
+* Handling file upload/download dialogs
+
+* Simulating keyboard presses outside the browser
+
+* Taking full-page screenshots
+
+* Dealing with OS-level pop-ups
 
   
