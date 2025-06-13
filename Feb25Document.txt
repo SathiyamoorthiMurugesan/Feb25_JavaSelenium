@@ -2524,7 +2524,7 @@ like mouse movements, key presses, click and hold, drag and drop, etc.
 
 *****************************************************************************
 		
-Day 64 (09/06/2024)
+Day 65 (09/06/2024)
 
 Robot class in detail
 
@@ -2539,4 +2539,187 @@ keyboard and mouse interactions that Selenium WebDriver itself cannot handle, su
 
 * Dealing with OS-level pop-ups
 
+*****************************************************************************
+		
+Day 66 (10/06/2024)
+
+Actions and Robot class revisit
+
+*****************************************************************************
+		
+Day 67 (12/06/2024)
+
+Casting in Java
+
+Casting in Java refers to converting one data type into another. There are two main types of casting:
+
+1. Primitive Type Casting
+	a. Widening Casting (Implicit)
+		Automatically done by Java.
+		Smaller to larger type conversion.
+
+Examples:
+	int a = 10;
+	double b = a;  // int to double
+	Order:
+	byte → short → int → long → float → double
+
+	b. Narrowing Casting (Explicit)
+		Manually done using parentheses.
+		Larger to smaller type conversion.
+
+Examples:
+	double a = 10.5;
+	int b = (int) a;  // double to int, value becomes 10
+
+
+2. Reference Type Casting (Objects)
+	Used when dealing with class hierarchies.
+
+	a. Upcasting (Implicit)
+		Subclass to superclass.
+		Safe and automatic.
+Example:
+	class Animal {}
+	class Dog extends Animal {}
+	Animal a = new Dog();  // Upcasting
+	
+	b. Downcasting (Explicit)
+		Superclass to subclass.
+		Needs explicit cast and may throw ClassCastException at runtime if types are incompatible.
+
+Example:
+	Animal a = new Dog();   // Upcasting
+	Dog d = (Dog) a;        // Downcasting
+	Important Notes
+	Always check with instanceof before downcasting:
+
+		if (a instanceof Dog) {
+			Dog d = (Dog) a;
+			}
+Casting is different from conversion in high-level classes like String → int, which requires parsing (e.g., Integer.parseInt("123")).
   
+*****************************************************************************
+		
+Day 68 (13/06/2024)
+
+Wait in Selenium
+
+In Selenium WebDriver, waits are used to synchronize the execution of test scripts with the web application under test. 
+This ensures that Selenium waits for certain conditions before performing actions, 
+helping to avoid flaky or failing tests due to timing issues (e.g., elements not being ready).
+
+1. Implicit Wait
+	Tells WebDriver to wait a specified amount of time when trying to find an element if it is not immediately available.
+	Applies globally to all elements.
+
+Example:
+	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	
+2. Explicit Wait
+	Waits for a specific condition to occur before proceeding further in the code.
+	More powerful and customizable than implicit waits.
+
+Common Conditions (from ExpectedConditions):
+	visibilityOfElementLocated
+	elementToBeClickable
+	presenceOfElementLocated
+	alertIsPresent
+	titleContains
+
+Example:
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("username")));
+	
+3. Fluent Wait
+	A more advanced form of explicit wait.
+	Allows you to define:
+		Polling frequency
+		Exceptions to ignore
+		Timeout duration
+
+Example:
+	Wait<WebDriver> wait = new FluentWait<>(driver)
+    	.withTimeout(Duration.ofSeconds(30))
+    	.pollingEvery(Duration.ofSeconds(5))
+    	.ignoring(NoSuchElementException.class);
+
+WebElement element = wait.until(driver -> driver.findElement(By.id("username")));
+
+🧠 When to Use Which?
+	Situation	Recommended Wait
+	Wait for element load globally	Implicit Wait
+	Wait for specific condition	Explicit Wait
+	Retry with custom polling and exception handling	Fluent Wait
+
+❌ Avoid This: Thread.sleep()
+	Hard-coded wait.
+	Always waits full duration, even if condition is met earlier.
+	Slows down your test unnecessarily.
+
+✅ Best Practices
+	Use explicit waits for dynamic elements.
+	Avoid mixing implicit and explicit waits.
+	Use FluentWait when polling is required (e.g., waiting for a spinner to disappear).
+	
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Scrolling in Selenium
+	* We can not automate scrolling using the selenium
+	* sometimes you want to bring an element into the view of your screen to perform operation
+		
+There are different ways to scroll your application when you work using selenium
+	* JavaScriptExecutor (need typecasting)
+	* Key board or mouse (Actions or Robot class)
+	* Actions class - moveToElement() methods is often used
+	
+Along with Scrolling, we can also do click and send text to any element using JSE(JavaScriptExecutor).
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Screenshot in Selenium
+
+1) using TakesScreenshot interface 
+	1. Take Full Page Screenshot
+		Best for: capturing the visible part of the page.
+	2. Take Screenshot of a Web Element
+		Best for: testing visual appearance or layout of individual elements.
+2) Take Full Page Screenshot with AShot (3rd-party Library)
+3) Robot Class for Web Screenshots
+	
+*****************************************************************************
+		
+Day 69 (14/06/2024)
+	
+Web table in detail 
+
+How do we work on frame, select, shadow root element 
+
+1) We identity the frame tag (parent tag) and then access the elements present in that tag.
+2) We identity the select tag(parent tag) and then accecss the options 
+3) We identity the tag (shadow host/parent tag) which contains the shadow root and then we access the element inside the tag.
+
+Like wise,
+	We need to identify the tag named <table> and then access the element inside it
+	<tr> - table row 
+	<th> - table header
+	<td> - table data
+	
+	<table>
+		<tr>  - 
+			<th>
+			<th>
+		<tr>
+			<td>
+			<td>
+		<tr>
+			<td>
+			<td>
+			
+Questions can be asked in related to web table.
+	1) Get/print all table header
+	2) print all row values
+	3) Print request column's values  
+	4) Based on request, fetch/delete/edit/modify the respective row values
+	5) Based on one column value, find the respective another column's value
+	6) How many rows are in the table including/excluding header row

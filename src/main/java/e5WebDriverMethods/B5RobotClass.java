@@ -19,7 +19,7 @@ public class B5RobotClass {
 
 	static WebDriver driver;
 	static B5RobotClass obj = new B5RobotClass();
-	
+
 	public static void main(String[] args) throws AWTException, InterruptedException {
 		System.setProperty("webdriver.chrome.driver", ".\\src\\main\\resources\\drivers\\chromedriver_136.exe");
 		driver = new ChromeDriver();
@@ -29,30 +29,36 @@ public class B5RobotClass {
 		driver.get("https://demo.guru99.com/test/upload/");
 
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		
-//		driver.findElement(By.id("uploadfile_0")).sendKeys("C:\\Users\\LENOVO\\OneDrive\\Desktop\\abc.txt");
-		
 
-		StringSelection stringSelection = new StringSelection("C:\\Users\\LENOVO\\OneDrive\\Desktop\\abc.txt");
-		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
-		
-//		driver.findElement(By.id("uploadfile_0")).click();
-		driver.findElement(By.xpath("//div[@id='file_wraper0']//input[@type='file']")).click();
-		
+//		driver.findElement(By.id("uploadfile_0")).sendKeys("C:\\Users\\LENOVO\\OneDrive\\Desktop\\abc.java");
+
 		Thread.sleep(3000);
 		
+//		StringSelection stringSelection = new StringSelection("C:\\Users\\LENOVO\\OneDrive\\Desktop\\abc.java");
+//		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
+
+//		driver.findElement(By.id("uploadfile_0")).click();
+		boolean abc = driver.findElement(By.xpath("//input[contains(@id, 'uploadfile')]")).isDisplayed();
+		System.out.println(abc + "*********************");
+		
+//		/html/body/div[2]/div/div/div[1]/form/div[2]/div[1]/div/div/input
+		//*[@id="uploadfile_0"]
+		
+		driver.findElement(By.xpath("//*[@id='uploadfile_0']")).click();
+		Thread.sleep(3000);
+
 		Robot robo = new Robot();
 
 		robo.keyPress(KeyEvent.VK_CONTROL);
 		robo.keyPress(KeyEvent.VK_V);
 		robo.keyRelease(KeyEvent.VK_V);
 		robo.keyRelease(KeyEvent.VK_CONTROL);
-		
+
 		Thread.sleep(3000);
 
 		robo.keyPress(KeyEvent.VK_ENTER);
 		robo.keyRelease(KeyEvent.VK_ENTER);
-		
+
 	}
 
 	@SuppressWarnings("deprecation")
@@ -87,7 +93,7 @@ public class B5RobotClass {
 //		Actions actions = new Actions(driver);
 //		actions.moveToElement(fileUploadButton).click().perform();
 //		actions.click(fileUploadButton).perform();
-		
+
 		fileUploadButton.sendKeys("C:\\Users\\LENOVO\\OneDrive\\Desktop\\abc.txt");
 
 //		boolean fileUploadCheck = driver.findElement(By.xpath("//div[@id='file_wraper0']//input[@type='file']")).isDisplayed();
