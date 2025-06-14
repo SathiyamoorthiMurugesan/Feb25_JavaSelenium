@@ -2723,3 +2723,22 @@ Questions can be asked in related to web table.
 	4) Based on request, fetch/delete/edit/modify the respective row values
 	5) Based on one column value, find the respective another column's value
 	6) How many rows are in the table including/excluding header row
+	
+	
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Shadow root elements
+
+	* If an element is present inside the shadow root, we can not locate it in DOM using xpath or CSS.
+		It always shows 0 of 0.
+	* To access an element which is present inside the shadow dom or show root. You need to find thet host of the shadow root
+		* Then use the method getShadowRoot();
+	* Keep in mind that, xpath wond work inside the shadow root. 
+		* You need to use the CSS Selector
+		
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+		
+WebDriver manager
+
+To avoid browser compatibility issue and manual download of the respective driver
+
