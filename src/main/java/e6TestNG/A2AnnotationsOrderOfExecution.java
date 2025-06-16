@@ -14,7 +14,22 @@ package e6TestNG;
 
 import org.testng.annotations.*;
 
-public class AnnotationsOrderOfExecution {
+public class A2AnnotationsOrderOfExecution {
+	
+//	Suite(S)
+//	Test(T)
+//	Class(C)
+//	Method(M)
+	
+//	STCM
+	
+//<suite name="MyTestSuite">
+//    <test name="LoginTests">
+//        <classes>
+//            <class name="com.example.tests.LoginTest"/>
+//        </classes>
+//    </test>
+//</suite>
 
 	@BeforeSuite
 	public void beforeSuite() {
@@ -37,15 +52,15 @@ public class AnnotationsOrderOfExecution {
 	}
 
 	
-	@BeforeGroups
-	public void beforeGroups() {
-		System.out.println("I am @BeforeGroups");
-	}
-	
-	@AfterGroups
-	public void afterGroups() {
-		System.out.println("I am @AfterGroups");
-	}
+//	@BeforeGroups
+//	public void beforeGroups() {
+//		System.out.println("I am @BeforeGroups");
+//	}
+//	
+//	@AfterGroups
+//	public void afterGroups() {
+//		System.out.println("I am @AfterGroups");
+//	}
 	
 	@BeforeClass
 	public void beforeClass() {
@@ -71,5 +86,10 @@ public class AnnotationsOrderOfExecution {
 	public void method1() {
 		System.out.println("I am @Test");
 	}
+	
+//	@Test
+//	public void method2() {
+//		System.out.println("I am @Test2");
+//	}
 
 }

@@ -2777,3 +2777,69 @@ Whenever we run as TestNG,
 
 
 
+*****************************************************************************
+		
+Day 70 (16/06/2024)
+
+TestNG provides a default report(index.html) and emailableReport.html.
+@Test - estential to run your test case 
+Alphabetical order 
+To control the order of @Test's, you need to use priority
+TestNG xml - how to generate it and how to run from xml
+	* Right click the desired class
+	* TestNG -> Convert to TestNG
+	* xml will be generated
+Annotations
+	A TestNG test can be configured by @BeforeXXX and @AfterXXX annotations 
+	which allows to perform some Java logic before and after a certain point, 
+	these points being either of the items listed above.
+	
+Suite
+Test
+Class
+Method
+Easy way to remember - State CM (ST CM)	
+
+@BeforeSuite
+@AfterSuite
+@BeforeTest
+@AfterTest
+@BeforeGroups
+@AfterGroups
+@BeforeClass
+@AfterClass
+@BeforeMethod
+@AfterMethod
+@Test
+
+Annotation Attributes
+	Priority
+	Enabled
+	AlwaysRun - mostly used with grouping
+	Group
+	DependsOnGroup
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+You should know, 
+	* different ways to run a TestNG class
+		* open class, righ click and run as TestNG
+		* Right click and run as TestNG
+		* Create a xml for that, and open the xml and run
+		* Create a xml and right click on the xml and run  
+	* Default report (always have the latest run's report or always it would be overridden)
+		* index.html
+		* emailable report.htmml
+		* failed test case xml
+	* Default suit and default test - you can change the name if you want
+	
+	
+Annotation Attributes - continuation
+	Depends on Method
+	Invocation count
+	
+Annotation
+	* @Parameters
+	* @DataProvider
+	
+Homework - How to do validation using TestNG in selenium

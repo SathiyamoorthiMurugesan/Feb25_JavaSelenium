@@ -35,12 +35,5 @@ public class ParametersInTestNG {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 	
-	@Parameters({"aParameter", "bParameter"})
-	@Test
-	public void methoWithParameter(String a, String b) {
-		System.out.println(a);
-		System.out.println(b);
-	}
-	
 
 }
