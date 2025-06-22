@@ -2843,3 +2843,148 @@ Annotation
 	* @DataProvider
 	
 Homework - How to do validation using TestNG in selenium
+
+*****************************************************************************
+		
+Day 71 (19/06/2024)
+
+TestNG assertion
+
+Assertions in Selenium UI testing (with TestNG or any test framework) are essential 
+because they validate that the application behaves as expected during or after an interaction. 
+Simply put, assertions are what turn your automation scripts into actual tests.
+
+Assertions immediately fail the test if something goes wrong, allowing early detection of bugs.
+
+Without assertions, your Selenium script may:
+
+Click buttons
+Fill out fields
+Navigate pages
+
+But it doesn't verify if those actions had the correct result.
+
+* Test with assertions = proves the system works
+* Test without assertions = just simulates actions
+
+Common TestNG Assertions
+	Method	Description
+		Assert.assertEquals(actual, expected)	Checks if two values are equal
+		Assert.assertTrue(condition)	Validates that a condition is true
+		Assert.assertFalse(condition)	Validates that a condition is false
+		Assert.assertNotNull(object)	Ensures the object is not null
+		Assert.assertNull(object)	Ensures the object is null
+		
+Example: With vs Without Assertion
+Action					Without Assertion				With Assertion
+Go to Login Page		Opens the page				Confirms page loaded correctly
+Enter credentials		Types values				Validates fields accepted input
+Click login				Clicks the button			Confirms dashboard appears
+Test outcome			No validation				Fails if title != "Dashboard"
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Orange HRM Page
+
+https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index
+
+Admin - Manimekala
+PIM - Anbu
+Leave - Mani
+
+*****************************************************************************
+Day 71 (19/06/2024)	
+Day 72 (21/06/2024)
+
+xpath and methods creation for Orange HRM page. 
+
+
+*****************************************************************************	
+Day 73 (22/06/2024)
+
+Framework in Selenium
+
+Difference between Automation and Framework?
+* Doing a work without manual effort is called - Automation
+	* In Automation - duplicate codes, redundency of codes will be there
+	* Explaining the flow is difficult 
+	* We can not use it for some other web application
+	* To automate each test case, it would take more time because we dont have common or generic methods to reuse.
+* Doing a same work by using a properly arranged structure of code.
+	E.g: keep a separate class to read or write on excel, prop or config or text files
+	
+Page Object Model design pattern... 
+	* each page - each java class (login page, cart page, payment page)
+	* each class - find all the elements inside of it and store it in a variable with proper name. (Page Objects)
+	* each class - find all the possible test cases and covert them into methods (Page Objects)
+	* how do you differentiate pages in an application - if URL changes, its a new page
+	
+https://practice.expandtesting.com/
+https://magento.softwaretestingboard.com/
+
+Different frameworks available
+	* Test Driven
+	* Data driven Framework
+	* Keyword driven Framework
+	* Hybrid framework
+	
+Tools - JUnit, TestNG
+
+Behaviour Driven Framework
+	* Cucumber along with JUnit/TestNG
+	
+When should we Automate
+	* Web Application should be stable
+	* Manual Test cases available - Manual understanding needed to know the application
+	* What are the regression Test cases, in that...
+	* In Manual Test cases 
+		* What can be automated
+		* What can not be automated
+		* partially automated 
+		* Manual intervention test cases
+	* Define Complexity of Test cases 
+		* Low 
+		* Medium
+		* High
+	* How much time it would take to complete the entire automation
+		
+Once we figure out the test cases
+
+1) What technology we are going to use - Java, Python, Selenium, Playwrite, QTP
+2) IDE - Eclipse, Visual Studio Code, InteliJ, STS(Spring tool suite)
+3) Framework - Data driven, Keyword, Hybrid (Data + keyword + POM + TestNG), Behaviour Driver (Cucumber + TestNG)
+4) How do store data - Excel, Json, CSV
+5) What are the standards we are going to follow
+	* method naming
+	* webElement naming
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Creating a new framework with TestNG
+
+1) Maven project
+2) Add required Dependencies - TestNG, Selenium
+	(also add the TestNG library to the project, also add TestNG plugin into Eclipse)
+3) Add the drivers
+3) Packages creation
+		src/main/java
+			* Base package
+				* Generic Class (We keep all the common methods related to Selenium)
+				* Utility Class (File, Excel, prop, text) reading methods
+			* Pages package
+				* One class for each page
+		src/main/resources
+			* Files which will be used with src/main/java package classes
+		src/test/java
+			* TestCases package
+				* New hire TCs class, etc
+		src/test/resources
+			* Files which will be used with src/test/java package classes
+
+TestNG Framework!!
+https://github.com/SathiyamoorthiMurugesan/Oct24TestNGFramework/tree/master
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+
+
