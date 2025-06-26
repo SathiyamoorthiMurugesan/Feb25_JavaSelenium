@@ -3118,3 +3118,100 @@ Tell me about yourself
 Explain your project 
 day to day at office
 Tell about your team
+
+****************************************************************************
+
+Agile and Waterfall methodologies
+
+
+Multiple Agile teams. 
+
+Agile teams & Members
+
+Sprint
+
+Features -> Epics -> Stories
+
+Story - Acceptance Criteria
+1) Understanding - purpose of the story, what is expected, which tech
+2) Story point - 1, 2, 3, 5, 8, 13 (Anonymous)
+
+Sprint
+
+Sprint ceremonies
+
+PI Planning
+	* Client or client's representative explains their initiative or goal or tells the feature they want in their app
+	* Product owner, Lead, Scrum master and Tech arch from each agile team will participate
+	* Each agile team will be give one or more feature to work on.
+
+* In order to start the sprint, I should know what stories my team need to work before the start of the sprint
+
+How many stories we are going to work
+Who is going to work on which story
+What the priority
+Who is on leave during the sprint/ Any Holidays
+
+Sprint planning - Sprint start 
+ * Mostly starts by Wednesday or Thursday
+ * Normally two weeks
+ * Always happen during the previous print
+ * What are the stories are we going to work on this sprint
+ * Who is going to work on which story
+ * How much story point for each story
+ * How many story points we are going to work on this sprint
+ 
+ * Sprint ends on the last day of the Sprint
+ 
+Sprint refinement or backlog refinement
+	* Product owner or Dev lead or tech arch, explains each stories in the backlog
+	* What is the expectation
+	* Defines Acceptance criteria
+	* What technologies involved in the story
+	* Testing needed or not 
+
+Status Call/Huddle
+
+* What you did yesterday
+* Whats your plan for today
+* What will you do on tomorrow. 
+* Any road blocks you faced/will face to complete the work
+
+Run by - Scrum master
+Max time for the meeting - 15 minutes
+No technical talks
+
+* Sprint Demo
+	* Where all the agile team members participate
+	* We need to demonstrate what we worked 
+	* Either we need to give demo or show the screenshots(for the time being)
+	* Usually given by Product Owner or Lead 
+	* Sometimes, tester also need to give
+
+* Sprint Retrospective
+	During the last sprint
+		* What went well
+		* What did not go well
+		* What we need to continue doing
+		* Appreciation
+		* Dependencies from other team went well or not
+
+Home work 
+
+SDLC
+STLC
+defect bug cycle
+How regression team works 
+How do you support regression
+When will you do the automation in a sprint
+
+
+
+
+
+
+
+
+
+
+
